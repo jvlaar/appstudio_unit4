@@ -7,7 +7,7 @@ public class JournalEntry implements Serializable {
     private String title;
     private String content;
     private float mood;
-    private int timestamp;
+    private String timestamp;
 
     public void setTitle(String title) {
         this.title = title;
@@ -21,7 +21,7 @@ public class JournalEntry implements Serializable {
         this.mood = mood;
     }
 
-    public void setTimestamp(int timestamp) {
+    public void setTimestamp(String timestamp) {
         this.timestamp = timestamp;
     }
 
@@ -41,7 +41,7 @@ public class JournalEntry implements Serializable {
         return mood;
     }
 
-    public int getTimestamp() {
+    public String getTimestamp() {
         return timestamp;
     }
 }
